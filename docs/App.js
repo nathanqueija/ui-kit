@@ -1,5 +1,5 @@
 import React from 'react'
-import {H1, H2, H3, H4} from 'uikit'
+import {H1, H2, H3, H4, Button} from 'uikit'
 
 const App = () => (
   <div>
@@ -7,6 +7,7 @@ const App = () => (
     <H2>2</H2>
     <H3>3</H3>
     <H4>4</H4>
+    <Button>EHAAt</Button>
   </div>
 )
 

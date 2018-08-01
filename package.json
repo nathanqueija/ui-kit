@@ -1,18 +1,17 @@
 {
-  "name": "ui-kit",
+  "name": "ui-kit-by-nathan",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Nathan Queija <nathanqcam@gmail.com>",
   "license": "MIT",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start":
-      "webpack-dev-server --mode development ./docs/entry.js --output ./dist/bundle.js --open",
+    "start": "webpack-dev-server --mode development ./docs/entry.js --output ./dist/bundle.js --open",
     "docs": "NODE_ENV=production webpack -p",
-    "dev":
-      "webpack --mode development ./docs/entry.js --output ./dist/bundle.js",
-    "build":
-      "webpack --mode production ./docs/entry.js --output ./dist/bundle.js",
+    "dev": "webpack --mode development ./docs/entry.js --output ./dist/bundle.js",
+    "build": "webpack --mode production ./src/index.js --output ./dist/bundle.js",
     "clean": "rm -rf dist",
     "dist": "yarn run clean && yarn run build"
   },
